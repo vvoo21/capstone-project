@@ -12,11 +12,18 @@ body {
   background-color: #fff;
 }
 
-header {
+.main-header {
   width: 100%;
   background: url(images/header_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 26px;
+  display: flex;
+}
+
+.about-header {
+  width: 100%;
+  background-color: #FFD100;
   padding: 26px;
   display: flex;
 }
@@ -52,11 +59,21 @@ header {
   padding: 30px;
 }
 
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFD100;
+  padding: 30px;
+}
+
 .hello-text {
   font-size: 25px;
   font-weight: 550;
   line-height: 30px;
-  color: #59cbe8;
+  color: #59CBE8;
   margin-bottom: 12px;
 }
 
@@ -70,6 +87,15 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
+.about-tittle {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 50px;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .invite-wrap {
   width: 100%;
   border: 4px solid #fff;
@@ -78,6 +104,40 @@ header {
   justify-content: flex-start;
   padding: 15px;
   margin-top: 30px;
+}
+
+.about-wrap {
+  width: 100%;
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.logo-wrap {
+  width: 100%;
+  border: 4px solid #d3d3d3;;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.img-about-wrap {
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.past-img {
+  max-width: 280px;
+  max-height: 170px;
 }
 
 .invite-msg,
@@ -90,6 +150,20 @@ header {
   line-height: 24px;
   color: #272a32;
 }
+
+.about-wrap {
+  margin-bottom: 40px;
+}
+
+.about-msg {
+  text-align: center;
+}
+
+.contact-msg {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 
 .date-info {
   font-size: 32px;
@@ -132,6 +206,10 @@ header {
   height: 16px;
   border-bottom: 1px solid #ef513c;
   margin: auto;
+}
+
+.bar-icon-about {
+  margin-bottom: 15px;
 }
 
 .program-list, 
@@ -189,6 +267,15 @@ header {
   color: #fff;
 }
 
+.about-email {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #272a32;
+  border-bottom: 1px solid #272a32;
+  width: 160px;
+}
+
 .featured-activities, 
 .partners,
 .partners-wrap,
@@ -198,6 +285,11 @@ header {
   flex-direction: column;
   justify-content: center;
   padding: 30px;
+}
+
+.logo {
+  border: 1px solid #d3d3d3;
+  padding: 40px 30px;
 }
 
 .featured-tittle {
@@ -250,6 +342,10 @@ header {
   display: flex;
 }
 
+.footer-about {
+  background-color: #2e2e2e;
+}
+
 .footer-wrap {
   width: 100%;
   display: flex;
@@ -262,9 +358,30 @@ header {
   margin-right: 12px;
 }
 
+.footer-tittle-about {
+  color:#fff;
+  margin-right: 12px;
+}
+
+.footer-text-about {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #fff;
+}
+
 @media screen and (min-width: 768px) {
 
-  header {
+  .main-header {
+    background: #fff;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .about-header {
+    width: 100%;
+    padding: 26px;
+    display: flex;
     background: #fff;
     flex-direction: column;
     padding: 0;
@@ -331,6 +448,38 @@ header {
     background-size: cover;
     background-position: top;
     padding: 110px;
+  }
+
+  .about {
+    width: 100%;
+    padding: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-wrap {
+    max-width: 600px;
+  }
+
+  .logo-msg {
+    max-width: 700px;
+    align-self: center;
+    margin: 20px;
+  }
+
+  .logo-wrap {
+    max-width: 500px;
+    align-self: center;
+  }
+
+  .img-about-wrap {
+    flex-direction: row;
+  }
+
+  .past-img {
+    max-width: 60%;
+    max-height: 60%;
   }
 
   .hello-text {
