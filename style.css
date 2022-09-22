@@ -71,9 +71,9 @@ body {
 
 .hello-text {
   font-size: 25px;
-  font-weight: 550;
+  font-weight: bold;
   line-height: 30px;
-  color: #59CBE8;
+  color: #d91e27;
   margin-bottom: 12px;
 }
 
@@ -81,7 +81,7 @@ body {
   font-size: 50px;
   font-weight: bolder;
   line-height: 50px;
-  background: linear-gradient(to right, #d91e27, orange);
+  background: linear-gradient(to right, #d91e27, rgb(255, 106, 0));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -471,6 +471,57 @@ body {
   .logo-wrap {
     max-width: 500px;
     align-self: center;
+  }
+
+  .bg-color-icon-1 {
+    background-color: #FFD100;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  .bg-color-icon-2 {
+    background-color: #F4A6D7;   
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .bg-color-icon-3 {
+    background-color: #59CBE8;
+    position: absolute;
+    left: 30px;
+    top: 1000px;
+    bottom: 0;
+    right: 0;    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .bg-color-icon-4 {
+    background-color: #FF6A13;
+    position: absolute;
+    left: 90%;
+    top: 150%;
+    bottom: 0;
+    right: 0;   
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+
+  .bg-color-icon-5 {
+    background-color: #7EDDD3;
+    position: absolute;
+    left: 80%;
+    top: 170%;
+    bottom: 0;
+    right: 0;
+    right: 50PX;    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
   }
 
   .img-about-wrap {
