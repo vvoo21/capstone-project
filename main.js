@@ -23,7 +23,7 @@ const activities = document.querySelector('.featured-activities');
 const activitiesArray = [
   {
     id: '1',
-    image: 'images/features_01.jpg',
+    image: 'images/speaker_01.png',
     tittle: 'Remembering the Children: National Day for Truth & Reconciliation',
     place: 'ew Iceland Heritage Museum & Independent Artists',
     city: 'Gimli, MB',
@@ -31,7 +31,7 @@ const activitiesArray = [
 
   {
     id: '2',
-    image: 'images/features_02.jpg',
+    image: 'images/speaker_02.png',
     tittle: "Nuit Blanche Kids Zone at The Children's Museum",
     place: "Manitoba Children's Museum",
     city: 'Winnipeg, MB',
@@ -39,7 +39,7 @@ const activitiesArray = [
 
   {
     id: '3',
-    image: 'images/features_03.jpg',
+    image: 'images/speaker_03.png',
     tittle: 'WSO Community Celebration Concert',
     place: 'Centennial Concert Hall',
     city: 'Winnipeg, MB',
@@ -47,7 +47,7 @@ const activitiesArray = [
 
   {
     id: '4',
-    image: 'images/features_04.png',
+    image: 'images/speaker_04.png',
     tittle: 'Nuit Blanche @ WAG',
     place: 'WAG-Qaumajuq',
     city: 'Winnipeg, MB',
@@ -55,7 +55,7 @@ const activitiesArray = [
 
   {
     id: '5',
-    image: 'images/features_05.jpg',
+    image: 'images/speaker_05.png',
     tittle: 'Kidz Culture',
     place: 'Creekside Park',
     city: 'Flin Flon, MB',
@@ -63,7 +63,7 @@ const activitiesArray = [
 
   {
     id: '6',
-    image: 'images/features_06.jpg',
+    image: 'images/speaker_06.png',
     tittle: 'Glen Williams Open Studios - Pauline Gladstone',
     place: 'Williams Mill Creative Art Studios',
     city: 'Halton Hills, ON',
@@ -120,6 +120,30 @@ const createActivities = () => {
     city.innerText = item.city;
     info.appendChild(city);
   });
+
+  const seeMore = document.createElement('div');
+  seeMore.classList.add('see-more-wrap');
+  activities.appendChild(seeMore);
+
+  const seeMoreText = document.createElement('p');
+  seeMoreText.classList.add('see-more-text');
+  seeMoreText.innerText = 'MORE';
+  seeMore.appendChild(seeMoreText);
+
+  const arrowBtn = document.createElement('a');
+  arrowBtn.classList.add('arrow-btn');
+  seeMore.appendChild(arrowBtn);
+
+  const arrowImg = document.createElement('img');
+  arrowImg.classList.add('arrow-img');
+  arrowImg.setAttribute('src', 'images/arrow_down.png');
+  arrowImg.setAttribute('alt', 'arrow icon');
+  arrowImg.setAttribute('width', '15');
+  arrowImg.setAttribute('height', '10');
+  arrowBtn.appendChild(arrowImg);
+  
 };
 
 createActivities();
+
+

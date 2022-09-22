@@ -28,7 +28,7 @@
 
 To get a local copy up and running follow these simple example steps:
 
-- git clone https://github.com/vvoo21/capstone-project.git
+- git clone `https://github.com/vvoo21/capstone-project.git`
 - To navigate into the project directory, use "cd capstone-project/"
 
 and enjoy
