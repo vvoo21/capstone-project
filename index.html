@@ -26,22 +26,22 @@
     </nav>
     <nav class="mobile-menu">
       <div>
-        <a href="#"><img src="images/mobile_menu.png" alt="mobile menu" width="20" height="20"></a>
+        <a class="mobile-menu-btn" href="#"><img src="images/mobile_menu.png" alt="mobile menu" width="20" height="20"></a>
       </div>
     </nav>
     <nav class="desktop-menu">
-      <a href="#"><img src="images/logo-en.svg" alt="logo culture days" width="100" height="64"></a>
+      <a href="index.html"><img src="images/logo-en.svg" alt="logo culture days" width="100" height="64"></a>
       <ul class="main-menu">
-        <li class="menu-list"><a href="#">About</a></li>
-        <li class="menu-list"><a href="#">Program</a></li>
-        <li class="menu-list"><a href="#">Join</a></li>
-        <li class="menu-list"><a href="#">Sponsor</a></li>
-        <li class="menu-list"><a href="#">News</a></li>
-        <li class="campaign-menu"><a href="#">Campaign</a></li>
+        <li class="menu-list"><a href="about.html">About</a></li>
+        <li class="menu-list"><a href="#program">Program</a></li>
+        <li class="menu-list"><a href="#join">Join</a></li>
+        <li class="menu-list"><a href="#sponsor">Sponsor</a></li>
+        <li class="menu-list"><a href="#news">News</a></li>
+        <li class="campaign-menu"><a href="index.html">Campaign</a></li>
       </ul>
     </nav>
   </header>
-  <main class="cultural-days-wrap">
+  <main class="cultural-days-wrap" id="main">
     <section class="invitation">
       <p class="hello-text">"Hello! Sharing World"</p>
       <h1 class="tittle">CULTURE DAYS <br> IS COMING! <br></h1>
@@ -51,7 +51,7 @@
       <p class="date-info">September 23 - October 16, 2022.</p>
       <p class="locate">@culturedays</p>
     </section>
-    <section class="main-program">
+    <section class="main-program" id="program">
       <h2 class="secondary-tittle">Main Program</h2>
       <div class="bar-icon"></div>
       <div class="program-list">
@@ -81,17 +81,17 @@
           <p class="program-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur harum velit dolorem magni eos laborum.</p>
         </div>
       </div>
-      <div class="join-culture">
+      <div class="join-culture" id="join">
         <a class="join-btn" href="#">Join Culture Days 2022</a>
       </div>
     </section>
-    <section class="featured-activities">
+    <section class="featured-activities" id="news">
       <h2 class="secondary-tittle featured-tittle">Featured Activities</h2>
       <div class="bar-icon"></div>
       <div class="activities-wrap">
         <div class="event">
           <img class="event-img" src="images/features_01.jpg" alt="event for cultural days" width="178" height="177">
-          <div info-activities>
+          <div class="info-activities">
             <h3 class="program-tittle name-event">Remembering the Children: National Day for Truth & Reconciliation</h3>
             <p class="place-event">New Iceland Heritage Museum & Independent Artists</p>
             <div class="bar-icon-gray"></div>
@@ -100,7 +100,7 @@
         </div>
         <div class="event">
           <img class="event-img" src="images/features_02.jpg" alt="event for cultural days" width="178" height="177">
-          <div info-activities>
+          <div class="info-activities">
             <h3 class="program-tittle name-event">Nuit Blanche Kids Zone at The Children's Museum</h3>
             <p class="place-event">Manitoba Children's Museum</p>
             <div class="bar-icon-gray"></div>
@@ -109,7 +109,7 @@
         </div>
         <div class="event">
           <img class="event-img" src="images/features_03.jpg" alt="event for cultural days" width="178" height="177">
-          <div info-activities>
+          <div class="info-activities">
             <h3 class="program-tittle name-event">WSO Community Celebration Concert</h3>
             <p class="place-event">Centennial Concert Hall</p>
             <div class="bar-icon-gray"></div>
@@ -118,7 +118,7 @@
         </div>
         <div class="event">
           <img class="event-img" src="images/features_04.png" alt="event for cultural days" width="178" height="177">
-          <div info-activities>
+          <div class= "info-activities">
             <h3 class="program-tittle name-event">Nuit Blanche @ WAG</h3>
             <p class="place-event">WAG-Qaumajuq</p>
             <div class="bar-icon-gray"></div>
@@ -127,7 +127,7 @@
         </div>
         <div class="event">
           <img class="event-img" src="images/features_05.jpg" alt="event for cultural days" width="178" height="177">
-          <div info-activities>
+          <div class="info-activities">
             <h3 class="program-tittle name-event">Kidz Culture
             </h3>
             <p class="place-event">Creekside Park</p>
@@ -137,7 +137,7 @@
         </div>
         <div class="event">
           <img class="event-img" src="images/features_06.jpg" alt="event for cultural days" width="178" height="177">
-          <div info-activities>
+          <div class="info-activities">
             <h3 class="program-tittle name-event">Glen Williams Open Studios - Pauline Gladstone</h3>
             <p class="place-event">Williams Mill Creative Art Studios</p>
             <div class="bar-icon-gray"></div>
@@ -146,7 +146,7 @@
         </div>
       </div>
     </section>
-    <section class="partners">
+    <section class="partners" id="sponsor">
       <h2 class="secondary-tittle partner-tittle">Partner</h2>
       <div class="bar-icon"></div>
       <div class="partners-wrap">
@@ -179,5 +179,25 @@
       <p class="footer-text">September 23 - October 16, 2022</p>
     </div>
   </footer>
+  <div class="overlay-wrap">
+    <div class="cancel-wrap">
+      <a href="#"><img src="images/close_mobile_menu.png" alt="close-icon"></a>
+    </div>
+    <ul class="main-menu-overlay">
+      <li class="list-arrow">
+        <a class="item-menu" href="about.html">About</a>
+        <img src="images/arrow_down.png" alt="arrow icon" width="15" height="10">
+      </li>
+      <li class="list-arrow">
+        <a class="item-menu" href="#program">Program</a>
+        <img src="images/arrow_down.png" alt="arrow icon" width="15" height="10">
+      </li>
+      <li class="list"><a class="item-menu" href="#join">Join</a></li>
+      <li class="list"><a class="item-menu" href="#sponsor">Sponsor</a></li>
+      <li class="list"><a class="item-menu" href="#news">News</a></li>
+      <li class="list campaign-menu"><a class="item-menu campaign" href="index.html">Campaign</a></li>
+    </ul>
+  </div>
+  <script src="main.js"></script>
 </body>
 </html>
