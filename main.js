@@ -19,7 +19,7 @@ itemMobileMenu.forEach(element => {
 
 // featured activities section 
 
-/* const activities = document.querySelector('.featured-activities');
+const activities = document.querySelector('.featured-activities');
 const activitiesArray = [
     {
         id: '1',
@@ -80,11 +80,12 @@ const createActivities = () => {
     const barIcon = document.createElement('div');
     barIcon.classList.add('bar-icon');
     activities.appendChild(barIcon);
+
+    const activityContainer = document.createElement('div');
+    activityContainer.classList.add('activities-wrap');
+    activities.appendChild(activityContainer);
     
     activitiesArray.forEach(item => {
-      const activityContainer = document.createElement('div');
-      activityContainer.classList.add('activities-wrap');
-      activities.appendChild(activityContainer);
 
       const event = document.createElement('div');
       event.classList.add('event');
@@ -100,10 +101,28 @@ const createActivities = () => {
 
       const info = document.createElement('div');
       info.classList.add('info-activities');
-      activityContainer.appendChild(info);
+      event.appendChild(info);
 
+      const tittle = document.createElement('h3');
+      tittle.classList.add('program-tittle', 'name-event');
+      tittle.innerText = item.tittle;
+      info.appendChild(tittle);
+
+      const place = document.createElement('p');
+      place.classList.add('place-event');
+      place.innerText = item.place;
+      info.appendChild(place);
+
+      const grayBar = document.createElement('div');
+      grayBar.classList.add('bar-icon-gray');
+      info.appendChild(grayBar);
+
+      const city = document.createElement('p');
+      city.classList.add('city-event');
+      city.innerText = item.city;
+      info.appendChild(city);
 
     });
 }
 
-createActivities(); */
+createActivities();
