@@ -16,7 +16,6 @@
 - Apply JavaScript best practices and language style guides in code.
 - Use JavaScript to manipulate DOM elements.
 - Use JavaScript events.
-- Use objects to store and access data.
 - Communicate technical concepts to other technical people.
 
 ## Links
