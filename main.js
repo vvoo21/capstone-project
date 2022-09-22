@@ -94,7 +94,7 @@ const createActivities = () => {
       const img = document.createElement('img');
       img.classList.add('event-img');
       img.setAttribute('src', item.image);
-      img.setAttribute('alt', 'event for cultural days');
+      img.setAttribute('alt', 'National Day for Truth & Reconciliation');
       img.setAttribute('width', '178');
       img.setAttribute('height', '178');
       event.appendChild(img);
@@ -108,7 +108,7 @@ const createActivities = () => {
       tittle.innerText = item.tittle;
       info.appendChild(tittle);
 
-      const place = document.createElement('p');
+      const place = document.createElement('h4');
       place.classList.add('place-event');
       place.innerText = item.place;
       info.appendChild(place);
