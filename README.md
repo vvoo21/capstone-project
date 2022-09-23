@@ -14,6 +14,7 @@
 ## Links
 
 - [capstone project](https://vvoo21.github.io/capstone-project/)
+- [Project documentation](https://www.loom.com/share/583aebc197cd4b2c9ca06a5192bc1730)
 - Original design idea by [Cindy Shin in Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
 
 ## Getting Started
