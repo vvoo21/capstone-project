@@ -12,7 +12,7 @@ body {
   background-color: #fff;
 }
 
-.main-header, 
+.main-header,
 .main-header-about {
   width: 100%;
   background: url(images/header_bg.png);
@@ -49,7 +49,7 @@ body {
   display: block;
 }
 
-.invitation, 
+.invitation,
 .about {
   width: 100%;
   display: flex;
@@ -71,8 +71,9 @@ img {
 
 .about {
   align-items: center;
-  background: url(images/about_bg_01.png),
-              rgb(247, 247, 248);
+  background:
+    url(images/about_bg_01.png),
+    rgb(247, 247, 248);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -124,7 +125,7 @@ img {
   justify-content: center;
 }
 
-.logo-img, 
+.logo-img,
 .logo-img-past {
   max-width: 100%;
   height: auto;
@@ -135,7 +136,7 @@ img {
 .program-text,
 .place-event,
 .city-event,
-.footer-text, 
+.footer-text,
 .info-text-about {
   font-size: 15px;
   font-weight: 400;
@@ -143,7 +144,7 @@ img {
   color: #272a32;
 }
 
-.about-msg, 
+.about-msg,
 .info-text-about {
   text-align: center;
 }
@@ -208,7 +209,7 @@ img {
   line-height: 30px;
   color: #fff;
   margin: auto;
-} 
+}
 
 .logo-tittle {
   max-width: 100%;
@@ -396,7 +397,7 @@ img {
 .footer-wrap {
   width: 100%;
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   padding: 50px;
 }
@@ -411,7 +412,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .main-header, 
+  .main-header,
   .main-header-about {
     background: #fff;
     flex-direction: column;
@@ -569,7 +570,7 @@ img {
   }
 
   .footer-text-main {
-    color: #fff
+    color: #fff;
   }
 
   .main-program,

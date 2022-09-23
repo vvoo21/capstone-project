@@ -141,9 +141,6 @@ const createActivities = () => {
   arrowImg.setAttribute('width', '15');
   arrowImg.setAttribute('height', '10');
   arrowBtn.appendChild(arrowImg);
-  
 };
 
 createActivities();
-
-
