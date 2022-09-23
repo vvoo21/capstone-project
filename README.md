@@ -9,6 +9,7 @@
 - HTML
 - CSS
 - JAVASCRIPT
+- GitHub pages
 
 ## Links
 
