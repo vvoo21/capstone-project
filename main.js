@@ -84,10 +84,14 @@ const createActivities = () => {
   activityContainer.classList.add('activities-wrap');
   activities.appendChild(activityContainer);
 
-  activitiesArray.forEach((item) => {
+  activitiesArray.forEach((item, index) => {
     const event = document.createElement('div');
     event.classList.add('event');
     activityContainer.appendChild(event);
+
+    if(index >= 2){
+      event.classList.add('hide');
+    }
 
     const img = document.createElement('img');
     img.classList.add('event-img');
@@ -121,18 +125,10 @@ const createActivities = () => {
     info.appendChild(city);
   });
 
-  const seeMore = document.createElement('div');
+  const seeMore = document.createElement('button');
   seeMore.classList.add('see-more-wrap');
-  activities.appendChild(seeMore);
-
-  const seeMoreText = document.createElement('p');
-  seeMoreText.classList.add('see-more-text');
-  seeMoreText.innerText = 'MORE';
-  seeMore.appendChild(seeMoreText);
-
-  const arrowBtn = document.createElement('a');
-  arrowBtn.classList.add('arrow-btn');
-  seeMore.appendChild(arrowBtn);
+  seeMore.innerText = 'MORE';
+  activities.appendChild(seeMore); 
 
   const arrowImg = document.createElement('img');
   arrowImg.classList.add('arrow-img');
@@ -140,7 +136,28 @@ const createActivities = () => {
   arrowImg.setAttribute('alt', 'arrow icon');
   arrowImg.setAttribute('width', '15');
   arrowImg.setAttribute('height', '10');
-  arrowBtn.appendChild(arrowImg);
+  seeMore.appendChild(arrowImg);
 };
 
 createActivities();
+
+const hideCard = document.querySelectorAll('.hide');
+const seeMorebtn = document.querySelector('.see-more-wrap');
+ 
+  seeMorebtn.addEventListener('click', () =>{
+    hideCard.forEach(element => {
+      element.classList.toggle('show');
+
+      if(element.classList.contains('show')){
+        seeMorebtn.innerText ='LESS';
+      } else {
+        seeMorebtn.innerText = 'MORE';
+      }
+    });
+  }); 
+
+
+
+
+
+
