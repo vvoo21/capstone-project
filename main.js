@@ -89,7 +89,7 @@ const createActivities = () => {
     event.classList.add('event');
     activityContainer.appendChild(event);
 
-    if(index >= 2){
+    if (index >= 2) {
       event.classList.add('hide');
     }
 
@@ -128,7 +128,7 @@ const createActivities = () => {
   const seeMore = document.createElement('button');
   seeMore.classList.add('see-more-wrap');
   seeMore.innerText = 'MORE';
-  activities.appendChild(seeMore); 
+  activities.appendChild(seeMore);
 
   const arrowImg = document.createElement('img');
   arrowImg.classList.add('arrow-img');
@@ -143,21 +143,15 @@ createActivities();
 
 const hideCard = document.querySelectorAll('.hide');
 const seeMorebtn = document.querySelector('.see-more-wrap');
- 
-  seeMorebtn.addEventListener('click', () =>{
-    hideCard.forEach(element => {
-      element.classList.toggle('show');
 
-      if(element.classList.contains('show')){
-        seeMorebtn.innerText ='LESS';
-      } else {
-        seeMorebtn.innerText = 'MORE';
-      }
-    });
-  }); 
+seeMorebtn.addEventListener('click', () => {
+  hideCard.forEach((element) => {
+    element.classList.toggle('show');
 
-
-
-
-
-
+    if (element.classList.contains('show')) {
+      seeMorebtn.innerText = 'LESS';
+    } else {
+      seeMorebtn.innerText = 'MORE';
+    }
+  });
+});

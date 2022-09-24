@@ -422,7 +422,7 @@ img {
   display: none;
 }
 
-.footer-text-wrap{
+.footer-text-wrap {
   width: 60%;
   display: flex;
   flex-direction: column;
@@ -587,7 +587,7 @@ img {
   }
 
   .footer-logo,
-  .footer-logo-main  {
+  .footer-logo-main {
     width: 350px;
     display: flex;
     padding-left: 110px;
@@ -661,7 +661,7 @@ img {
     display: flex;
   }
 
-  .footer-text-wrap{
+  .footer-text-wrap {
     width: 70%;
     gap: 10px;
   }
