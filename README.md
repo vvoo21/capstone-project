@@ -2,34 +2,26 @@
 
 # capstone-project
 
-> In this capstone project, I built an online website based on [CC Global Summit 2015](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) by Cindy Shin and [culture days' website page](https://culturedays.ca/en) that helped me to personalize the content.
+> In this capstone project, I built an online website based on [CC Global Summit 2015](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) by Cindy Shin.
 
 ## Built With
 
-- semantic HTML tags.
-- Apply best practices in HTML code.
-- Use CSS selectors correctly.
-- Use CSS box model.
-- Use Flexbox to place elements in the page.
-- Demonstrate ability to create UIs adaptable to different screen sizes using media queries.
-- Use GitHub Pages to deploy web pages.
-- Apply JavaScript best practices and language style guides in code.
-- Use JavaScript to manipulate DOM elements.
-- Use JavaScript events.
-- Use objects to store and access data.
-- Communicate technical concepts to other technical people.
+- HTML
+- CSS
+- JAVASCRIPT
+- GitHub pages
 
 ## Links
 
 - [capstone project](https://vvoo21.github.io/capstone-project/)
+- [Project documentation](https://www.loom.com/looms/videos)
 - Original design idea by [Cindy Shin in Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015)
-- [culture days' website page](https://culturedays.ca/en)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps:
 
-- git clone https://github.com/vvoo21/capstone-project.git
+- git clone `https://github.com/vvoo21/capstone-project.git`
 - To navigate into the project directory, use "cd capstone-project/"
 
 and enjoy
@@ -56,7 +48,6 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - This is a solution to the [CC Global Summit 2015 by Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
-- Also, this challenge is customized based [culture days' website page](https://culturedays.ca/en).
 
 ## 📝 License
 
